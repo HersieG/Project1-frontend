@@ -1,0 +1,50 @@
+:root {
+    --primary-orange: #FFAD7F;
+    --secondary-orange: #FFC580;
+    --accent: #7FD1FF;
+    --dark-text: black;
+    --light-text: white;
+
+}
+
+/*Typography // Base*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-orange);
+    color: var(--dark-text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3 {
+    font-family: 'PT-Serif', sans-serif;
+    line-height: 1.25;
+    margin: 0 0 .5rem;
+}
+
+p, .hero, .aboutp {
+    max-width: 65ch;
+}
+
+.wrap {
+    width: min(1100px, 94%);
+    margin-inline: auto;
+}
+
+section {
+    padding: 3rem 0;
+}
+
+/*Header*/
