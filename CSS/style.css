@@ -25,8 +25,6 @@ a {
 body {
   margin: 0;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 
   background: linear-gradient(
     to bottom,
@@ -37,8 +35,13 @@ body {
   color: var(--dark-text);
   font-family: "Inter", sans-serif;
   line-height: 1.5;
-  align-items: center;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -158,15 +161,21 @@ hr {
 
 /*Contact and Submit btn*/
 .button {
-  background-color: gray;
+  background: linear-gradient(to bottom, grey, rgb(88, 87, 87));
   padding: 6px;
   border-radius: 10px;
   border: 2px solid white;
 }
 /*Project*/
+
 .title {
   text-decoration: underline;
   text-decoration-thickness: 3px;
+}
+li {
+  margin: 5px;
+  text-decoration: none;
+  list-style: none;
 }
 
 form {
