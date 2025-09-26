@@ -4,6 +4,7 @@
     --accent: #7FD1FF;
     --dark-text: black;
     --light-text: white;
+    --border: #EAD8CC;
 
 }
 
@@ -74,7 +75,7 @@ section {
 
 hr {
     border: none;
-    background-color: var(--dark-text);
+    background-color: var(--border);
     height: 2px;
     width: 100%;
     z-index: 10;
@@ -82,11 +83,83 @@ hr {
 
 
 /*Navigation*/
+.site-nav {
+    background: var(--secondary-orange);
+    border-block: 1px solid var(--dark-text);
+}
 
-/*Buttons*/
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: .75rem 1rem;
+}
 
-/*Projects*/
+.site-nav li {
+    display: inline;
+}
+.site-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark-text);
+    padding: .50rem .5rem;
+    border-radius: 6px;
+}
 
-/*Skills and Contact*/
+.site-nav a:hover {
+    background: rgb(0, 0, 0, 0.2);
+}
 
+.site-nav a:active {
+    background-color: var(--primary-orange);
+}
+/*About Section*/
+
+
+/*Skills*/
+
+
+/*Contact and Submit btn*/
+
+
+/*Project*/
+
+.projects {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+}
+.projects-title {
+    text-align: center;
+    padding: 1rem;
+}
+
+.projects > section {
+    background: var(--accent);
+    border: 1px solid var(--dark-text);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: .75rem;
+}
+
+@media (min-width: 720px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /*Footer*/
