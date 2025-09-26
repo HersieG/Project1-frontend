@@ -1,87 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Name - My Portfolio </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Name - My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
 
-<body>
-
-<header class="site-header">
-    <div class="brand">
-        <img src="../images/code_blocks_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Brand Logo" class="logo">
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <img src="../images/" alt="Brand Logo" class="logo" />
         <h1>My Brand</h1>
-    </div>
-</header>
-<hr>
-<nav class="site-nav">
-    <ul>
+      </div>
+    </header>
+    <nav class="site-nav">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="project.html">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav> 
+      </ul>
+    </nav>
 
-<main>
-    <section class="wrap">
-        <h2>Hello, I'm NAME!</h2>
-        <p class="hero">I am computer science student at UNC Charlotte! Explore some
-            of my projects here or contact me below!
+    <main>
+      <div class="hero">
+        <h1>Hello, I'm Hersie!</h1>
+        <p>I am studnet</p>
+        <img
+          src="../images/code_blocks_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+          width="100"
+          height="100"
+        />
+        <a href="#contact"><p class="button">Contact Me</p></a>
+      </div>
+      <div class="divider"></div>
+      <section class="wrap">
+        <h1 class="title">about me</h1>
+        <p class="about">
+          I am computer science student at UNC Charlotte! Explore some of my
+          projects here or contact me below!
         </p>
-        <p><a class="button" href="#contact">Contact Me</a></p>
-    </section>
+      </section>
 
-    <section id="about" class="wrap">
-        <h2>All About Me</h2>
-        <p class="aboutp">Short Intro</p>
-        <p class="aboutp">Focus Areas</p>
-        <p class="aboutp">Goal</p>
-    </section>
-
-    <section id="skills" class="wrap">
-        <h2>Skills</h2>
+      <section id="skills" class="wrap">
+        <h1 class="title">Skills</h1>
         <ul class="tags">
-            <li>Java</li>
-            <li>HTML 5</li>
-            <li>CSS</li>
-            <li>Human Centered Computing</li>
+          <li>Java</li>
+          <li>HTML 5</li>
+          <li>CSS</li>
+          <li>Human Centered Computing</li>
         </ul>
-    </section>
+      </section>
 
-    <section id="contact" class="wrap">
-        <h2>Contact</h2>
+      <section id="contact" class="wrap">
+        <h1 class="title">Contact</h1>
         <p>You can reach me directly with the below options:</p>
         <ul class="contact-info">
-            <li><a href="mailto:example@gmail.com">Email</a></li>
-            <li><a href="tel:+11234567890">Phone</a></li>
+          <li><a href="mailto:example@gmail.com">Email</a></li>
+          <li><a href="tel:+11234567890">Phone</a></li>
         </ul>
 
         <h3>Send Me a Message</h3>
         <form action="#" method="post" novalidate>
-            <label>Your Name<input type="name" required></label>
-            <label>Your Email<input type="email" required></label>
-            <label>
-                Your Message
-                <textarea name="message" rows="6" required minlength="10"></textarea>
-            </label>
-            <button class="btn" type="submit">Send</button>
-        </form>
-    </section>
-</main>
+          <label>Your Name <input type="name" required /></label>
+          <br />
+          <br />
+          <label>Your Email <input type="email" required /></label>
+          <br />
+          <br />
 
-<footer>
-    <div class="wrap">
+          <label>
+            Your Message
+            <textarea
+              name="message"
+              rows="6"
+              required
+              minlength="10"
+            ></textarea>
+          </label>
+          <br />
+          <br />
+
+          <button class="button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
         <p>&copy; 2025 My Name</p>
         <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="project.html">Projects</a></li>
+          <a href=""></a>
+          <a href=""></a>
         </ul>
-    </div>
-</footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
