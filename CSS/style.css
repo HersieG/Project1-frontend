@@ -57,7 +57,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    gap: 0.75rem;
 }
 
 .logo {
@@ -67,7 +67,17 @@ section {
 }
 
 .site-header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1;
+}
+
+hr {
+    border: none;
+    background-color: var(--dark-text);
+    height: 2px;
+    width: 100%;
+    z-index: 10;
 }
 
 
